@@ -1,18 +1,17 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import { componentTagger } from "vite-plugin-component-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(), // <--- Add this line
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+});
