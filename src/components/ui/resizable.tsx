@@ -4,8 +4,8 @@ import { Panel, Group, Separator } from "react-resizable-panels";
 
 import { cn } from "@/lib/utils";
 
-// 'PanelGroup' was renamed to 'Group' in v4
-// We map 'direction' (shadcn convention) to 'orientation' (v4 convention)
+// 'PanelGroup' is now 'Group'
+// We map 'direction' (shadcn prop) to 'orientation' (library prop)
 const ResizablePanelGroup = ({
   className,
   direction = "horizontal",
@@ -23,7 +23,7 @@ const ResizablePanelGroup = ({
 
 const ResizablePanel = Panel;
 
-// 'PanelResizeHandle' was renamed to 'Separator' in v4
+// 'PanelResizeHandle' is now 'Separator'
 const ResizableHandle = ({
   withHandle,
   className,
