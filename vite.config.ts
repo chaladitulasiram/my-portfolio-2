@@ -1,13 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite"; // <--- Did you add this import?
 import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // <--- Add this line
+    tailwindcss(), // <--- Did you add this function call?
   ],
   resolve: {
     alias: {
