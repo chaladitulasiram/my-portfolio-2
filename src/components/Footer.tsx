@@ -39,7 +39,7 @@ export const Footer = () => {
           </div>
 
           <p className="text-muted-foreground text-sm font-mono">
-            © 2024 — Built with <span className="text-primary">♥</span>
+            © 2024 — Built with <span className="text-primary">passion</span>
           </p>
         </motion.div>
       </div>
